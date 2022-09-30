@@ -298,11 +298,13 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(value)
+{
+  return(value * 0.621371);
 }
 
-
+let km = 5;
+console.log ( km + " km is equivalent to " + miles(km) + " miles");
 
 //Task 5b - Centimeters to Feet
 /*
@@ -312,10 +314,13 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(value)
+{
+  return value / 30.48;
 }
 
+let cm = 30;
+console.log( cm + " cm is equivalent to " + feet(cm) + " feet");
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
