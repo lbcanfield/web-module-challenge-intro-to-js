@@ -19,7 +19,16 @@ Do the following:
 
    HINT: no function required
 */
+let votingAge = 43;
 
+if ( votingAge >= 18)
+{
+  console.log("True");
+}
+else
+{
+  console.log("False");
+}
 
 
 /*
@@ -33,8 +42,19 @@ Do the following:
 
    HINT: no function required
 */
+let firstThing = '1st Thing';
+//let secondThing = '1st Thing';
+let secondThing = 'not 1st Thing';
 
-
+if (firstThing === secondThing)
+{
+  console.log("True");
+}
+else
+{
+  console.log("False");
+}
+console.log(firstThing);
 
 
 
