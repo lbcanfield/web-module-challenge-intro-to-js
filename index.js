@@ -102,11 +102,12 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(x)
+{
+  return (x * 7);
 }
 
-
+console.log( dogYears(5) );
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -154,11 +155,53 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(theDogsWeight, theDogsAge)
+{
+  //console.log("The Dog Weighs " + theDogsWeight + "lbs, and is " + theDogsAge + " years old");
+  //console.log( 2 / 12 );
+  if ( theDogsAge >= 1 )        // The Dog is 1+ years old, diet depends on weight
+  {
+    if (theDogsWeight > 15)
+    {
+      return theDogsWeight * 0.02;
+    }
+    else if (theDogsWeight >= 11 && theDogsWeight <= 15)
+    {
+      return theDogsWeight * 0.03;
+    }
+    else if (theDogsWeight >= 6 && theDogsWeight <= 10)
+    {
+      return theDogsWeight * 0.04;
+    }
+    else
+    {
+      return theDogsWeight * 0.05;
+    }
+  }
+  else                          // The Dog is less than 1 year old, diet depends on age
+  {
+    if (theDogsAge <= 0.3)
+    {
+      return theDogsWeight * 0.10;
+    }
+    else if (theDogsAge <= 0.58)
+    {
+      return theDogsWeight * 0.05;
+    }
+    else 
+    {
+      return theDogsWeight * 0.04;
+    }
+
+  }
 }
 
 
+var weight = 4;                    // this will be the weight of the dog in lbs
+var age = 1;                        // this will be the dog's age in years
+var rawFood = hungryDog(weight, age);
+//console.log(rawFood);
+//console.log(7 / 12);
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
