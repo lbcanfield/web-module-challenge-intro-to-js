@@ -68,7 +68,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-
+let thisVar = "1999";
+thisVar = 1999;
+console.log(thisVar);
 
 
 
@@ -85,6 +87,9 @@ function multiply(num1, num2){
   return num1 * num2;
 }
 
+let a = 12;
+let b = 5;
+console.log( multiply( a,b ) );
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
